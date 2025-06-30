@@ -1,6 +1,7 @@
 import { Inter } from "next/font/google";
 import type { Metadata } from "next";
 import "./styles/global.css";
+import Introduction from "./pages/introduction/page";
 
 const inter = Inter({
   variable: "--font-inter",
@@ -47,7 +48,12 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`${inter.variable} antialiased`}>{children}</body>
+      <body
+        className={`${inter.variable} antialiased flex items-center justify-between`}
+      >
+        <Introduction />
+        {children}
+      </body>
     </html>
   );
 }

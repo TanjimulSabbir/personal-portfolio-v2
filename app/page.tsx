@@ -1,7 +1,9 @@
+import AboutMe from "./components/About/AboutMe";
+
 export default function Home() {
   return (
     <div>
-      <p>Hello</p>
+     <AboutMe/>
     </div>
   );
 }
