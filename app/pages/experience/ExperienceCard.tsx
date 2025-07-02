@@ -9,7 +9,7 @@ export default function ExperienceCard({
 }) {
   return (
     <div className="bg-[#0B1120] rounded-xl p-5 text-white shadow-md w-full flex justify-between gap-3">
-      <p className="job-title w-[20%]">{period.toUpperCase()}</p>
+      <p className="job-period w-[20%]">{period.toUpperCase()}</p>
 
       <div className="w-[75%]">
         <h3 className="title">
@@ -24,9 +24,7 @@ export default function ExperienceCard({
           </a>
         </h3>
 
-        <p className="text-sm text-gray-300 mt-2 leading-relaxed">
-          {description}
-        </p>
+        <p className="job-description mt-2 leading-relaxed">{description}</p>
 
         {technologies?.length > 0 && (
           <div className="flex flex-wrap gap-2 mt-4">

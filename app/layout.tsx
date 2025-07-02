@@ -49,9 +49,11 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${inter.variable} antialiased mt-20 container max-w-screen-2xl mx-auto flex justify-between border`}
+        className={`${inter.variable} antialiased mt-20 container max-w-screen-2xl mx-auto flex justify-between`}
       >
-        <Introduction />
+        <div className="">
+          <Introduction />
+        </div>
         {children}
       </body>
     </html>

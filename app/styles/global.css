@@ -21,8 +21,11 @@ body {
   .title {
     @apply text-primary text-base font-bold duration-500 transition-colors hover:text-teal-300 focus-visible:text-teal-300;
   }
-  .job-title {
-    @apply text-secondary text-xs font-normal duration-500 transition-colors hover:text-teal-300 focus-visible:text-teal-300;
+  .job-period {
+    @apply text-secondary text-xs font-normal;
+  }
+  .job-description {
+    @apply text-secondary text-sm font-normal;
   }
 }
 @layer base {
