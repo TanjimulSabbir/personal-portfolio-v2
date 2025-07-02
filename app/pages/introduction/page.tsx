@@ -2,11 +2,11 @@ import Header from "@/app/components/Header/Header";
 
 export default function Introduction() {
   return (
-    <div className="flex flex-col items-center justify-center min-h-screen p-8 pb-20 gap-16 sm:p-20 font-sans">
+    <div className="">
       <div>
-        <h1 className="text-5xl">Tanjimul Sabbir</h1>
-        <h3 className="text-xl">Front-End Software Engineer</h3>
-        <p>
+        <h1 className="text-5xl font-extrabold">Tanjimul Sabbir</h1>
+        <h3 className="text-xl mt-3">Front-End Software Engineer</h3>
+        <p className="mt-5">
           I’m a Front-End Engineer who enjoys building beautiful, accessible,
           performant web apps.
         </p>

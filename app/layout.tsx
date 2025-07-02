@@ -49,7 +49,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${inter.variable} antialiased flex items-center justify-between`}
+        className={`${inter.variable} antialiased mt-20 container max-w-screen-2xl mx-auto grid grid-cols-[40%_50%] border`}
       >
         <Introduction />
         {children}
