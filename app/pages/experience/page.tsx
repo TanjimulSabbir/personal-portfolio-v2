@@ -1,7 +1,12 @@
-import React from 'react'
+import { experiences } from "@/app/data/experience"
+import ExperienceCard from "./ExperienceCard";
 
 export default function Experience() {
-  return (
-    <div className='experience'>Experience</div>
-  )
+    return (
+      <div className="mt-20 space-y-10">
+        {experiences.map((exp, idx) => (
+          <ExperienceCard key={idx} {...exp} />
+        ))}
+      </div>
+    );
 }

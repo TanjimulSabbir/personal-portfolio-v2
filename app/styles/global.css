@@ -19,10 +19,10 @@ body {
     @apply text-secondary text-base;
   }
   .title {
-    @apply text-primary font-semibold duration-500 transition-colors hover:text-teal-300 focus-visible:text-teal-300;
+    @apply text-primary text-base font-bold duration-500 transition-colors hover:text-teal-300 focus-visible:text-teal-300;
   }
   .job-title {
-    @apply text-secondary text-sm font-medium duration-500 transition-colors hover:text-teal-300 focus-visible:text-teal-300;
+    @apply text-secondary text-xs font-normal duration-500 transition-colors hover:text-teal-300 focus-visible:text-teal-300;
   }
 }
 @layer base {
