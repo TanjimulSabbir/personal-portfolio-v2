@@ -1,7 +1,7 @@
 import { Inter } from "next/font/google";
 import type { Metadata } from "next";
 import "./styles/global.css";
-import Introduction from "./pages/introduction/page";
+import Introduction from "./components/introduction/page";
 
 const inter = Inter({
   variable: "--font-inter",
@@ -49,7 +49,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${inter.variable} antialiased mt-20 container max-w-screen-2xl mx-auto grid grid-cols-[40%_50%] border`}
+        className={`${inter.variable} antialiased mt-20 container max-w-screen-2xl mx-auto flex justify-between border`}
       >
         <Introduction />
         {children}

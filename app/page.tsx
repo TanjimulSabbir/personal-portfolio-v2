@@ -1,9 +1,13 @@
-import AboutMe from "./components/About/AboutMe";
+import { AboutMe, Contact, Experience, Skills, Work } from "./pages/home/home";
 
-export default function Home() {
+export default function MainContainerHome() {
   return (
-    <div>
-     <AboutMe/>
+    <div className="w-[60%] flex flex-col min-h-screen p-4">
+      <AboutMe />
+      <Experience />
+      <Skills />
+      <Work />
+      <Contact />
     </div>
   );
 }
