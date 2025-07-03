@@ -1,15 +1,25 @@
+type ExperienceCardProps = {
+  role: string;
+  company: string;
+  period: string;
+  description: string;
+  technologies?: string[];
+  companyUrl: string;
+};
+
 export default function ExperienceCard({
   role,
   company,
   period,
   description,
   technologies,
-  link,
   companyUrl,
-}) {
+}: ExperienceCardProps) {
   return (
     <div className="bg-[#0B1120] rounded-xl p-5 text-white shadow-md w-full md:flex justify-between gap-3">
-      <p className="mb-3 md:mb-0 job-period md:w-[20%]">{period.toUpperCase()}</p>
+      <p className="mb-3 md:mb-0 job-period md:w-[20%]">
+        {period.toUpperCase()}
+      </p>
 
       <div className="md:w-[75%]">
         <h3 className="title">
@@ -26,7 +36,7 @@ export default function ExperienceCard({
 
         <p className="job-description mt-2 leading-relaxed">{description}</p>
 
-        {technologies?.length > 0 && (
+        {technologies && technologies.length > 0 && (
           <div className="flex flex-wrap gap-2 mt-4">
             {technologies.map((tech, idx) => (
               <span

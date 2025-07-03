@@ -1,11 +1,10 @@
 "use client";
-import { FiGithub, FiLinkedin, FiFacebook } from "react-icons/fi";
-import { CiTwitter } from "react-icons/ci";
-import { GrMedium } from "react-icons/gr";
-import { BsDiscord } from "react-icons/bs";
 import { useState } from "react";
 import toast, { Toaster } from "react-hot-toast";
+import { BsDiscord } from "react-icons/bs";
+import { CiTwitter } from "react-icons/ci";
 import { FaMedium } from "react-icons/fa";
+import { FiFacebook, FiGithub, FiLinkedin } from "react-icons/fi";
 const Contact = () => {
   const [message, setMessage] = useState({
     name: "",
@@ -34,7 +33,7 @@ const Contact = () => {
   };
 
   return (
-    <div id="contact" className="w-full pb-14 mx-auto">
+    <div id="contact" className="w-full py-14 mx-auto">
       <div>
         <div className="mb-10 mid-lg:mb-20 lg:text-center">
           <h1 className="heading font-bold text-[#ccd6f6] mb-5">

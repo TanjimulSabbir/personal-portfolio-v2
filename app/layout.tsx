@@ -1,18 +1,18 @@
-import { Exo_2, Inter } from "next/font/google";
 import type { Metadata } from "next";
-import "./styles/global.css";
+import { Inter } from "next/font/google";
 import Introduction from "./components/introduction/page";
+import "./styles/global.css";
 
 const inter = Inter({
   variable: "--font-inter",
   subsets: ["latin"],
   display: "swap",
 });
-export const exo2 = Exo_2({
-  variable: "--font-exo2",
-  subsets: ["cyrillic-ext", "latin", "latin-ext"],
-  display: "swap",
-});
+// export const exo2 = Exo_2({
+//   variable: "--font-exo2",
+//   subsets: ["cyrillic-ext", "latin", "latin-ext"],
+//   display: "swap",
+// });
 
 export const metadata: Metadata = {
   title: "Tanjimul Sabbir | Personal Portfolio",
