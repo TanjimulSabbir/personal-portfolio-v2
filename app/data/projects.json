@@ -1,0 +1,106 @@
+{
+  "Projects": [
+    {
+      "id": 1,
+      "projectName": "Flim Flix",
+      "Description": "FlimFlix is an impressive movie web application designed to enhance your entertainment experience. Users can easily watch movies and trailers on FlimFlix. With just a click, dive into the world of cinema. Keep track of movies and TV series you want to watch later by adding them to your personalized watchlist. Search for movies, TV series, or cast members using our advanced and stylish search input. The search functionality is both powerful and user-friendly.",
+      "image": "https://i.ibb.co/VwMTXJw/Flim-Flix.png",
+      "Technologies": [
+        "Reactjs",
+        "Javascript",
+        "TailwindCSS",
+        "React-Redux",
+        "Redux-Toolkit",
+        "RTK-Query",
+        "Material UI"
+      ],
+      "Links": {
+        "github": "Search for movies, TV series, or cast members using our advanced and stylish search input. The search functionality is both powerful and user-friendly.",
+        "live": "https://flimflix-dev.netlify.app/"
+      }
+    },
+    {
+      "id": 2,
+      "projectName": "Paradise Palms",
+      "Description": "Paradise Palm Resort – the ultimate getaway for guests. Explore a range of services, thoughtfully categorized for user convenience. Every service features detailed information and an appealing offers page, ensuring seamless updates. Booking desired services is easy, with a personalized dashboard to keep users informed about upcoming reservations. User can elevate their experience, inspiring repeat bookings and a world of vibrant memories.",
+      "image": "https://i.ibb.co/fNYm3TB/paradise-palms.png",
+      "Technologies": [
+        "Reactjs",
+        "Javascript",
+        "TailwindCSS",
+        "Firebase",
+        "RestAPI",
+        "Nodejs",
+        "Expressjs",
+        "MongoDB"
+      ],
+      "Links": {
+        "github": "https://github.com/TanjimulSabbir/Paradise-Palms-Resort-Client-Site",
+        "live": "https://paradise-palms-tourist-h-c7621.web.app/"
+      }
+    },
+    {
+      "id": 3,
+      "projectName": "Nature World",
+      "Description": "Introducing Naute World—an e-commerce haven designed for plant lovers. The mission is to offer user-friendly access to premium plants and gardening supplies at budget-friendly rates. The website is powered by the MERN (MongoDB, Express, React, Node.js) stack, crafting a seamless and responsive journey for every user.This site will immerse users in a world of verdant beauty and horticultural treasures, tailored to satisfy the user's passion for all things botanical.",
+      "image": "https://i.ibb.co/7KWMh1H/Home-Nature-World.png",
+      "Technologies": [
+        "Javascript",
+        "Reactjs",
+        "CSS",
+        "Bootstrap",
+        "RestAPI",
+        "Nodejs",
+        "Expressjs",
+        "MongoDB",
+        "Firebase"
+      ],
+      "Links": {
+        "github": "https://github.com/TanjimulSabbir/Nature-World-Client-Site",
+        "live": "https://nature-world-2c964.web.app/"
+      }
+    },
+    {
+      "id": 4,
+      "projectName": "Glimpses",
+      "Description": "Glimpses is a simple and beautiful interface to capture peoples's thoughts and moments. Use glimpses as a personal journal to track user's daily activities, record travels, people can meet. I just design it by myself. I'm doing it just for grow up my designing skill. If possible later, I will make an app like glimpses daybook type app.",
+      "image": "https://i.ibb.co/pdwyKPx/glimpses-A-simple-and-minimal-journal-app-2.png",
+      "Technologies": [
+        "Javascript",
+        "Reactjs",
+        "CSS",
+        "TailwindCSS",
+        "React-Icons"
+      ],
+      "Links": {
+        "github": "https://github.com/TanjimulSabbir/glimpses---A-simple-and-minimal-journal-app",
+        "live": "https://glimpsesget.netlify.app/"
+      },
+      "stack": "Front-end and Design"
+    },
+    {
+      "id": 5,
+      "projectName": "Drake Porfolio",
+      "Description": "This is a portfolio website designed to enhance my skills in design. The site incorporates various features, including two types of navigation bars. Users have the flexibility to adjust the background color and text color to suit their preferences for a more comfortable experience. I aim to provide a dynamic user experience through this site.",
+      "image": "https://i.ibb.co/9rdwrcJ/drake-portfolio-cut.png",
+      "Technologies": ["HTML", "CSS", "TailwindCSS", "Javascript"],
+      "Links": {
+        "github": "https://github.com/TanjimulSabbir/Darke-Portfolio",
+        "live": "https://drake-portfolio.netlify.app/"
+      },
+      "stack": "Front-end and Design"
+    },
+    {
+      "id": 6,
+      "projectName": "Tic-Tac-Toe",
+      "Description": "Tic-Tac-Toe holds a special place in my personal interests. One day, I stumbled upon this game on social media and felt inspired to create it myself. I kept it simple, using just vanilla JavaScript. If time permits, I plan to implement a 'play against the computer' feature in the future. Additionally, I've included sound effects for wins and losses, aiming to provide users with a more vibrant gaming experience. Enjoy the game!",
+      "image": "https://i.ibb.co/gFBbjqs/Tic-Tac-Toe.png",
+      "Technologies": ["HTML", "CSS", "TailwindCSS", "Javascript"],
+      "Links": {
+        "github": "https://github.com/TanjimulSabbir/Tic-Tac-Toe",
+        "live": "https://tanjimulsabbir.github.io/Tic-Tac-Toe/"
+      },
+      "stack": "Front-end and Design"
+    }
+  ]
+}

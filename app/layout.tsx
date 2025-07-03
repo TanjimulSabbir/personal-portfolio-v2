@@ -8,6 +8,11 @@ const inter = Inter({
   subsets: ["latin"],
   display: "swap",
 });
+const expo2 = Inter({
+  variable: "--font-expo2",
+  subsets: ["latin"],
+  display: "swap",
+});
 
 export const metadata: Metadata = {
   title: "Tanjimul Sabbir | Personal Portfolio",
@@ -49,9 +54,9 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${inter.variable} antialiased mt-20 container max-w-screen-2xl mx-auto flex justify-between`}
+        className={`${inter.variable} antialiased mt-20 container border max-w-screen-2xl mx-auto flex px-4 md:px-5 lg:px-8 2xl:px-10 justify-between`}
       >
-        <div className="">
+        <div>
           <Introduction />
         </div>
         {children}

@@ -1,7 +1,88 @@
-import React from 'react'
+import Image from "next/image";
+import AntDesign from "../../../public/media/images/skills/ant.svg";
+import css3 from "../../../public/media/images/skills/css3.png";
+import firebase from "../../../public/media/images/skills/firebase.png";
+import git from "../../../public/media/images/skills/git.png";
+import github from "../../../public/media/images/skills/github.png";
+import html5 from "../../../public/media/images/skills/html5.png";
+import javascript from "../../../public/media/images/skills/javascript.png";
+import materialui from "../../../public/media/images/skills/MaterialUI.png";
+import mongodb from "../../../public/media/images/skills/mongodb.png";
+import nodejs from "../../../public/media/images/skills/nodejs.png";
+import reactjs from "../../../public/media/images/skills/reactjs.png";
+import redux from "../../../public/media/images/skills/redux.png";
+import shadcn from "../../../public/media/images/skills/shadcn.png";
+import tailwind from "../../../public/media/images/skills/tailwind.png";
+import typescript from "../../../public/media/images/skills/Typescript.png";
+import zod from "../../../public/media/images/skills/zod.png";
 
-export default function Skills() {
+function Skills() {
+  const Tools = [
+    html5,
+    css3,
+    javascript,
+    typescript,
+    reactjs,
+    redux,
+    tailwind,
+    AntDesign,
+    shadcn,
+    zod,
+    materialui,
+    nodejs,
+    firebase,
+    mongodb,
+    git,
+    github,
+  ];
+  const toolsName = [
+    "html5",
+    "css3",
+    "javascript",
+    "typescript",
+    "reactjs",
+    "redux",
+    "tailwind",
+    "Ant Design",
+    "shadcn",
+    "Zod",
+    "Material UI",
+    "nodejs",
+    "firebase",
+    "mongodb",
+    "git",
+    "github",
+  ];
   return (
-    <div className='skills'>Skills</div>
-  )
+    <div id="skill" className="py-24 border">
+      {/* <div>
+        <div className="mb-10 mid-lg:mb-20">
+          <h1 className="Exo2 TitleText font-bold text-[#ccd6f6] mb-2">
+            Skill & Tools
+          </h1>
+          <p className="text-custom-BgColor rubik">
+            What Tools and Things can I do!
+          </p>
+        </div>
+      </div> */}
+      <div className="grid grid-cols-3 sm:grid-cols-4 mid-lg:grid-cols-5 items-center gap-7">
+        {Tools.map((tool, index) => {
+          return (
+            <div
+              key={index}
+              className="cursor-pointer transition transform duration-500 hover:scale-110 hover:rotate-12 hover:animate-pulse opacity-50 hover:opacity-100"
+            >
+              <div className="p-4 rounded-full flex flex-col text-center justify-center border">
+                <Image className="w-24 flex items-center justify-center mx-auto" src={tool} alt={tool} />
+                <p className="uppercase mt-2 text-sm">{toolsName[index]}</p>
+              </div>
+            </div>
+          );
+        })}
+      </div>
+      <div></div>
+    </div>
+  );
 }
+
+export default Skills;
