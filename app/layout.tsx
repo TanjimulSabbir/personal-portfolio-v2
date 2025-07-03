@@ -1,13 +1,18 @@
-import { Inter } from "next/font/google";
 import type { Metadata } from "next";
-import "./styles/global.css";
+import { Inter } from "next/font/google";
 import Introduction from "./components/introduction/page";
+import "./styles/global.css";
 
 const inter = Inter({
   variable: "--font-inter",
   subsets: ["latin"],
   display: "swap",
 });
+// export const exo2 = Exo_2({
+//   variable: "--font-exo2",
+//   subsets: ["cyrillic-ext", "latin", "latin-ext"],
+//   display: "swap",
+// });
 
 export const metadata: Metadata = {
   title: "Tanjimul Sabbir | Personal Portfolio",
@@ -49,9 +54,11 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${inter.variable} antialiased mt-20 container max-w-screen-2xl mx-auto flex justify-between border`}
+        className={`${inter.variable} antialiased mt-20 container max-w-screen-2xl mx-auto lg:flex px-4 md:px-5 lg:px-8 2xl:px-10 justify-between`}
       >
-        <Introduction />
+        <div>
+          <Introduction />
+        </div>
         {children}
       </body>
     </html>
