@@ -31,7 +31,7 @@ const Work = () => {
     >
       {/* Heading */}
       <motion.h1 variants={fadeItem} className="heading">
-        Some Things I've built
+        Some Things Ive built
       </motion.h1>
 
       {/* Projects */}
