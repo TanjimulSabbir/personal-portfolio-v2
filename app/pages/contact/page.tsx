@@ -34,10 +34,10 @@ const Contact = () => {
   };
 
   return (
-    <div id="contact" className="w-full pt-24 pb-14 mx-auto">
+    <div id="contact" className="w-full pb-14 mx-auto">
       <div>
         <div className="mb-10 mid-lg:mb-20 lg:text-center">
-          <h1 className="Exo2 TitleText font-bold text-[#ccd6f6] mb-5">
+          <h1 className="heading font-bold text-[#ccd6f6] mb-5">
             Get In Touch
           </h1>
           <p className="text-custom-BgColor rubik text-xs sm:text-base">
@@ -46,7 +46,7 @@ const Contact = () => {
             I’ll try my best to get back to you!
           </p>
         </div>
-        <div className="text-primary ">
+        <div className="text-primary pt-10">
           <div className="sm:grid grid-cols-2 sm:space-x-14">
             <div className="mb-7 flex flex-col">
               <label htmlFor="fullName" className="text-xs">
@@ -56,7 +56,7 @@ const Contact = () => {
                 type="text"
                 name="fullname"
                 id="fullName"
-                placeholder="Entr Name"
+                placeholder="Enter Name"
                 onChange={(event) =>
                   setMessage((pre) => ({ ...pre, name: event.target.value }))
                 }
@@ -65,7 +65,7 @@ const Contact = () => {
             </div>
             <div className="mb-7 flex flex-col">
               <label htmlFor="email" className="text-xs">
-                Theme
+                Subject
               </label>
               <input
                 onChange={(event) =>
@@ -74,12 +74,12 @@ const Contact = () => {
                 type="text"
                 name="subject"
                 id="subject"
-                placeholder="Subject"
+                placeholder="Give a subject (e.g. Job Opportunity, Question, Hello)"
                 className="ContactPlaceHolder border-custom-TextColor placeholder:rubik mt-3"
               />
             </div>
           </div>
-          <div className="mb-7 flex flex-col">
+          <div className="mt-10 mb-7 flex flex-col">
             <label htmlFor="message" className="text-xs">
               Your Message
             </label>
@@ -94,7 +94,7 @@ const Contact = () => {
             ></textarea>
           </div>
           <div data-aos="fade-down" data-aos-duration="700">
-            <div className="mt-8 merina">
+            <div className="mt-10">
               <button
                 onClick={handleMessage}
                 type="submit"

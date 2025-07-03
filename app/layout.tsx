@@ -1,4 +1,4 @@
-import { Inter } from "next/font/google";
+import { Exo_2, Inter } from "next/font/google";
 import type { Metadata } from "next";
 import "./styles/global.css";
 import Introduction from "./components/introduction/page";
@@ -8,9 +8,9 @@ const inter = Inter({
   subsets: ["latin"],
   display: "swap",
 });
-const expo2 = Inter({
-  variable: "--font-expo2",
-  subsets: ["latin"],
+export const exo2 = Exo_2({
+  variable: "--font-exo2",
+  subsets: ["cyrillic-ext", "latin", "latin-ext"],
   display: "swap",
 });
 
@@ -54,7 +54,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${inter.variable} antialiased mt-20 container border max-w-screen-2xl mx-auto flex px-4 md:px-5 lg:px-8 2xl:px-10 justify-between`}
+        className={`${inter.variable} antialiased mt-20 container max-w-screen-2xl mx-auto lg:flex px-4 md:px-5 lg:px-8 2xl:px-10 justify-between`}
       >
         <div>
           <Introduction />

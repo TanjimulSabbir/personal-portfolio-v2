@@ -54,25 +54,25 @@ function Skills() {
     "github",
   ];
   return (
-    <div id="skill" className="py-24 border">
-      {/* <div>
-        <div className="mb-10 mid-lg:mb-20">
-          <h1 className="Exo2 TitleText font-bold text-[#ccd6f6] mb-2">
+    <div id="skill" className="py-24">
+      <div>
+        <div className="relative mb-10 mid-lg:mb-20">
+          <h1 className="heading">
             Skill & Tools
           </h1>
-          <p className="text-custom-BgColor rubik">
+          <p className="absolute top-11 text-sm text-secondary">
             What Tools and Things can I do!
           </p>
         </div>
-      </div> */}
-      <div className="grid grid-cols-3 sm:grid-cols-4 mid-lg:grid-cols-5 items-center gap-7">
+      </div>
+      <div className="grid grid-cols-3 sm:grid-cols-4 gap-7">
         {Tools.map((tool, index) => {
           return (
             <div
               key={index}
               className="cursor-pointer transition transform duration-500 hover:scale-110 hover:rotate-12 hover:animate-pulse opacity-50 hover:opacity-100"
             >
-              <div className="p-4 rounded-full flex flex-col text-center justify-center border">
+              <div className="p-4 rounded-full flex flex-col text-center justify-center">
                 <Image className="w-24 flex items-center justify-center mx-auto" src={tool} alt={tool} />
                 <p className="uppercase mt-2 text-sm">{toolsName[index]}</p>
               </div>
@@ -80,7 +80,6 @@ function Skills() {
           );
         })}
       </div>
-      <div></div>
     </div>
   );
 }

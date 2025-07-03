@@ -14,7 +14,7 @@ export default function Header() {
   ];
 
   return (
-    <header className="mt-10">
+    <header className="hidden lg:block mt-10">
       <ul className="space-y-4">
         {navItems.map((item) => (
           <li

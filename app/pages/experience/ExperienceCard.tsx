@@ -8,10 +8,10 @@ export default function ExperienceCard({
   companyUrl,
 }) {
   return (
-    <div className="bg-[#0B1120] rounded-xl p-5 text-white shadow-md w-full flex justify-between gap-3">
-      <p className="job-period w-[20%]">{period.toUpperCase()}</p>
+    <div className="bg-[#0B1120] rounded-xl p-5 text-white shadow-md w-full md:flex justify-between gap-3">
+      <p className="mb-3 md:mb-0 job-period md:w-[20%]">{period.toUpperCase()}</p>
 
-      <div className="w-[75%]">
+      <div className="md:w-[75%]">
         <h3 className="title">
           {role} ·{" "}
           <a

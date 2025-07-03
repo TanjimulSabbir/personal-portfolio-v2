@@ -1,6 +1,7 @@
 export default function AboutMe() {
   return (
     <div id="aboutme">
+      <h1 className="mt-7 lg:mt-0 heading">About</h1>
       <p className="description">
         Hi, I'm <span className="title">Tanjimul Islam Sabbir</span>, a
         dedicated <span className="title">Front-End Developer</span> who thrives
@@ -57,49 +58,97 @@ export default function AboutMe() {
         learning without limits. Let’s build something meaningful together.
         <br />
         <br />
-        <strong>What I'm Up To</strong>
-        <br />
-        <br />
-        🔭 Solving{" "}
-        <span className="title">algorithmic challenges on LeetCode</span> to
-        improve my problem-solving skills and logical thinking.
-        <br />
-        🚀 Deepening my knowledge in <span className="title">
-          React
-        </span> and <span className="title">TypeScript</span>, exploring
-        component architecture, state optimization, and rendering patterns.
-        <br />
-        📱 Learning <span className="title">React Native</span> and{" "}
-        <span className="title">Expo</span> to craft modern, cross-platform
-        mobile apps.
-        <br />
-        🤝 Always open to{" "}
-        <span className="title">collaborative opportunities</span> — whether in
-        startups, open source, or meaningful freelance work.
-        <br />
-        <br />
-        <strong>Beyond Code</strong>
-        <br />
-        <br />
-        🌿 <span className="title">Gardening</span>: Growing and caring for
-        plants gives me peace and a sense of rhythm in life.
-        <br />
-        📸 <span className="title">Nature Photography</span>: Capturing trees,
-        birds, and ponds helps me stay mindful and connected to the present.
-        <br />
-        📖 <span className="title">Reading</span>: I’m deeply passionate about
-        human evolution, social history, religion, and philosophy — ideas that
-        shape how we live and think.
-        <br />
-        🤔 I often reflect on life, existence, and purpose. My beliefs oscillate
-        between <span className="title">religious</span> and{" "}
-        <span className="title">agnostic</span> worldviews, and I’m always open
-        to new perspectives.
-        <br />
-        🔍 As a hobbyist, I explore{" "}
-        <span className="title">ethical hacking</span> and cybersecurity — not
-        to exploit, but to understand how systems can be strengthened and
-        protected.
+        <div className=" space-y-1 text-base text-secondary">
+          <p className="mt-5 mb-1 text-hightlight">
+            <strong className="text-title">What I'm Up To</strong>
+          </p>
+
+          <p>
+            🔭{" "}
+            <span>
+              Solving{" "}
+              <span className="title">algorithmic challenges on LeetCode</span>{" "}
+              to improve my problem-solving skills and logical thinking.
+            </span>
+          </p>
+
+          <p>
+            🚀{" "}
+            <span>
+              Deepening my knowledge in <span className="title">React</span> and{" "}
+              <span className="title">TypeScript</span>, exploring component
+              architecture, state optimization, and rendering patterns.
+            </span>
+          </p>
+
+          <p>
+            📱{" "}
+            <span>
+              Learning <span className="title">React Native</span> and{" "}
+              <span className="title">Expo</span> to craft modern,
+              cross-platform mobile apps.
+            </span>
+          </p>
+
+          <p>
+            🤝{" "}
+            <span>
+              Always open to{" "}
+              <span className="title">collaborative opportunities</span> —
+              whether in startups, open source, or meaningful freelance work.
+            </span>
+          </p>
+
+          <p className="mt-5 mb-1 text-hightlight">
+            <strong className="text-title">Beyond Code</strong>
+          </p>
+
+          <p>
+            🌿{" "}
+            <span>
+              <span className="title">Gardening</span>: Growing and caring for
+              plants gives me peace and a sense of rhythm in life.
+            </span>
+          </p>
+
+          <p>
+            📸{" "}
+            <span>
+              <span className="title">Nature Photography</span>: Capturing
+              trees, birds, and ponds helps me stay mindful and connected to the
+              present.
+            </span>
+          </p>
+
+          <p>
+            📖{" "}
+            <span>
+              <span className="title">Reading</span>: I’m deeply passionate
+              about human evolution, social history, religion, and philosophy —
+              ideas that shape how we live and think.
+            </span>
+          </p>
+
+          <p>
+            🤔{" "}
+            <span>
+              I often reflect on life, existence, and purpose. My beliefs
+              oscillate between <span className="title">religious</span> and{" "}
+              <span className="title">agnostic</span> worldviews, and I’m always
+              open to new perspectives.
+            </span>
+          </p>
+
+          <p>
+            🔍{" "}
+            <span>
+              As a hobbyist, I explore{" "}
+              <span className="title">ethical hacking</span> and cybersecurity —
+              not to exploit, but to understand how systems can be strengthened
+              and protected.
+            </span>
+          </p>
+        </div>
       </p>
     </div>
   );
