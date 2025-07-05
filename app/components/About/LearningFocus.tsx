@@ -5,16 +5,6 @@ export default function LearningFocus() {
   return (
     <div className="space-y-6 text-base leading-relaxed">
       <p className="heading">What I’m Up To</p>
-      <div className="flex items-start gap-3 transition-all duration-500 hover:scale-[1.02]">
-        <FaCode className="text-accent mt-1" />
-        <p>
-          Solving{" "}
-          <span className="title text-accent font-semibold">
-            algorithmic challenges on LeetCode
-          </span>{" "}
-          to sharpen problem-solving skills and boost logical thinking.
-        </p>
-      </div>
 
       <div className="flex items-start gap-3 transition-all duration-500 hover:scale-[1.02]">
         <FaReact className="text-accent mt-1" />
@@ -33,7 +23,16 @@ export default function LearningFocus() {
           architecture and modern rendering patterns.
         </p>
       </div>
-
+      <div className="flex items-start gap-3 transition-all duration-500 hover:scale-[1.02]">
+        <FaCode className="text-accent mt-1" />
+        <p>
+          Solving{" "}
+          <span className="title text-accent font-semibold">
+            algorithmic challenges on LeetCode
+          </span>{" "}
+          to sharpen problem-solving skills and boost logical thinking.
+        </p>
+      </div>
       <div className="flex items-start gap-1 transition-all duration-500 hover:scale-[1.02]">
         <BiMobile className="text-accent mt-1" />
         <p>
