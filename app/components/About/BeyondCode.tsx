@@ -10,10 +10,10 @@ import { GiLotus, GiBookshelf, GiBirdTwitter } from "react-icons/gi";
 
 export default function BeyondCode() {
   return (
-    <section className="px-6 py-12 max-w-4xl mx-auto text-gray-800">
-      <h2 className="text-4xl font-bold mb-6 text-accent">🌌 Beyond Code</h2>
+    <section className="mt-6">
+      <h2 className="heading font-bold mb-6 text-accent">Beyond Code</h2>
 
-      <div className="space-y-6 text-lg leading-relaxed">
+      <div className="space-y-6 leading-relaxed">
         <p>
           Most of the time, I’m not just coding — I’m exploring the roots of
           human history, how civilization evolved, and how human nature works.
@@ -69,7 +69,7 @@ export default function BeyondCode() {
         </ul>
 
         <div className="mt-6">
-          <h3 className="text-2xl font-semibold mb-2">
+          <h3 className="title font-semibold mb-2">
             <GiBookshelf className="inline text-indigo-500 mr-2" />
             Personal Library
           </h3>
@@ -83,7 +83,7 @@ export default function BeyondCode() {
         </div>
 
         <div className="mt-6">
-          <h3 className="text-2xl font-semibold mb-2">
+          <h3 className="title font-semibold mb-2">
             <GiBirdTwitter className="inline text-teal-500 mr-2" />
             Nature Collection
           </h3>
@@ -95,15 +95,15 @@ export default function BeyondCode() {
         </div>
 
         <div className="mt-6">
-          <h3 className="text-2xl font-semibold mb-2">
+          <h3 className="title font-semibold mb-2">
             <FaCodeBranch className="inline text-yellow-500 mr-2" />
             The Tech Side
           </h3>
           <p>
             I’m working hard to level up to a mid-level developer, focusing on
             performance optimization, architecture, and mastering modern tools
-            like Vite, Webpack, and Turbo. I try to walk more than 5 km a day
-            for balance and energy.
+            like Vite, Webpack, and Turbo.  Currently, I’m working on a personal
+            project that combines my love of technology, ideas, and more handy to spread the actual knowledge.
           </p>
         </div>
       </div>

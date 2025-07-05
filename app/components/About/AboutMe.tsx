@@ -1,3 +1,4 @@
+import BeyondCode from "./BeyondCode";
 import LearningFocus from "./LearningFocus";
 
 export default function AboutMe() {
@@ -5,9 +6,10 @@ export default function AboutMe() {
     <div id="aboutme" className="scroll-mt-20">
       <h1 className="mt-7 lg:mt-0 heading">About</h1>
       <div className="description">
-        Hi, Im <span className="title">Tanjimul Islam Sabbir</span>, a dedicated{" "}
-        <span className="title">Front-End Developer</span> who thrives on
-        building intuitive, scalable, and performance-optimized web experiences.
+        Hi, I’m <span className="title">Tanjimul Islam Sabbir</span>, a
+        dedicated <span className="title">Front-End Developer</span> who thrives
+        on building intuitive, scalable, and performance-optimized web
+        experiences.
         <br />
         <br />I specialize in modern technologies like{" "}
         <span className="title">ReactJS</span>,{" "}
@@ -59,61 +61,9 @@ export default function AboutMe() {
         learning without limits. Let’s build something meaningful together.
         <br />
         <br />
-        <div className=" space-y-1 text-base text-secondary">
-          <p className="mt-5 mb-1 text-hightlight">
-            <strong className="text-title">What I’m Up To</strong>
-          </p>
-
+        <div className=" text-secondary">
           <LearningFocus />
-          <p className="mt-5 mb-1 text-hightlight">
-            <strong className="text-title">Beyond Code</strong>
-          </p>
-
-          <p>
-            🌿{" "}
-            <span>
-              <span className="title">Gardening</span>: Growing and caring for
-              plants gives me peace and a sense of rhythm in life.
-            </span>
-          </p>
-
-          <p>
-            📸{" "}
-            <span>
-              <span className="title">Nature Photography</span>: Capturing
-              trees, birds, and ponds helps me stay mindful and connected to the
-              present.
-            </span>
-          </p>
-
-          <p>
-            📖{" "}
-            <span>
-              <span className="title">Reading</span>: I’m deeply passionate
-              about human evolution, social history, religion, and philosophy —
-              ideas that shape how we live and think.
-            </span>
-          </p>
-
-          <p>
-            🤔{" "}
-            <span>
-              I often reflect on life, existence, and purpose. My beliefs
-              oscillate between <span className="title">religious</span> and{" "}
-              <span className="title">agnostic</span> worldviews, and I’m always
-              open to new perspectives.
-            </span>
-          </p>
-
-          <p>
-            🔍{" "}
-            <span>
-              As a hobbyist, I explore{" "}
-              <span className="title">ethical hacking</span> and cybersecurity —
-              not to exploit, but to understand how systems can be strengthened
-              and protected.
-            </span>
-          </p>
+          <BeyondCode />
         </div>
       </div>
     </div>
