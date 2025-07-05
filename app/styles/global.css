@@ -3,7 +3,7 @@
 body {
   background-color: #0a192f;
   color: #ccd6f6;
-  font-family: "Inter", sans-serif;
+  font-family: var(--font-inter);
 }
 @theme {
   --color-background: #0a192f;
@@ -13,7 +13,7 @@ body {
   --color-hover: #5eead4;
   --color-hightlight: #64ffda;
   --breakpoint-2xl: 1400px;
-  --font-Exo2: var(--font-exo2);
+  --font-Exo2: 'Exo 2', sans-serif;
 }
 
 @layer components {
@@ -24,7 +24,7 @@ body {
     @apply text-secondary text-base;
   }
   .title {
-    @apply text-primary text-base font-bold duration-500 transition-colors hover:text-teal-300 focus-visible:text-teal-300;
+    @apply text-primary font-Exo2 text-base font-bold duration-500 transition-colors hover:text-teal-300 focus-visible:text-teal-300;
   }
   .job-period {
     @apply text-secondary text-xs font-normal;

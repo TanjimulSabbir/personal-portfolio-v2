@@ -16,19 +16,19 @@ export default function ExperienceCard({
   companyUrl,
 }: ExperienceCardProps) {
   return (
-    <div className="bg-[#0B1120] rounded-xl p-5 text-white shadow-md w-full md:flex justify-between gap-3">
-      <p className="mb-3 md:mb-0 job-period md:w-[20%]">
+    <div className="hover:bg-[#0B1120] rounded-xl p-5 group text-white transition duration-500 cursor-pointer hover:shadow-md w-full md:flex justify-between gap-3">
+      <p className="mb-3 md:mb-0 job-period md:w-[25%]">
         {period.toUpperCase()}
       </p>
 
       <div className="md:w-[75%]">
-        <h3 className="title">
+        <h3 className="title group-hover:text-hightlight">
           {role} ·{" "}
           <a
             href={companyUrl}
             target="_blank"
             rel="noopener noreferrer"
-            className="hover:underline text-white"
+            className="hover:underline text-white group-hover:text-hightlight"
           >
             {company} <span aria-hidden>↗</span>
           </a>

@@ -33,9 +33,9 @@ const Contact = () => {
   };
 
   return (
-    <div id="contact" className="w-full py-14 mx-auto">
+    <div id="contact" className="w-full mt-20 mb-10 mx-auto">
       <div>
-        <div className="mb-10 mid-lg:mb-20 lg:text-center">
+        <div className="mb-10 lg:text-center">
           <h1 className="heading font-bold text-[#ccd6f6] mb-5">
             Get In Touch
           </h1>

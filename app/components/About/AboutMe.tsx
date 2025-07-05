@@ -1,12 +1,13 @@
+import LearningFocus from "./LearningFocus";
+
 export default function AboutMe() {
   return (
-    <div id="aboutme">
+    <div id="aboutme" className="scroll-mt-20">
       <h1 className="mt-7 lg:mt-0 heading">About</h1>
-      <p className="description">
-        Hi, Im <span className="title">Tanjimul Islam Sabbir</span>, a
-        dedicated <span className="title">Front-End Developer</span> who thrives
-        on building intuitive, scalable, and performance-optimized web
-        experiences.
+      <div className="description">
+        Hi, Im <span className="title">Tanjimul Islam Sabbir</span>, a dedicated{" "}
+        <span className="title">Front-End Developer</span> who thrives on
+        building intuitive, scalable, and performance-optimized web experiences.
         <br />
         <br />I specialize in modern technologies like{" "}
         <span className="title">ReactJS</span>,{" "}
@@ -60,45 +61,10 @@ export default function AboutMe() {
         <br />
         <div className=" space-y-1 text-base text-secondary">
           <p className="mt-5 mb-1 text-hightlight">
-            <strong className="text-title">What Im Up To</strong>
+            <strong className="text-title">What I’m Up To</strong>
           </p>
 
-          <p>
-            🔭{" "}
-            <span>
-              Solving{" "}
-              <span className="title">algorithmic challenges on LeetCode</span>{" "}
-              to improve my problem-solving skills and logical thinking.
-            </span>
-          </p>
-
-          <p>
-            🚀{" "}
-            <span>
-              Deepening my knowledge in <span className="title">React</span> and{" "}
-              <span className="title">TypeScript</span>, exploring component
-              architecture, state optimization, and rendering patterns.
-            </span>
-          </p>
-
-          <p>
-            📱{" "}
-            <span>
-              Learning <span className="title">React Native</span> and{" "}
-              <span className="title">Expo</span> to craft modern,
-              cross-platform mobile apps.
-            </span>
-          </p>
-
-          <p>
-            🤝{" "}
-            <span>
-              Always open to{" "}
-              <span className="title">collaborative opportunities</span> —
-              whether in startups, open source, or meaningful freelance work.
-            </span>
-          </p>
-
+          <LearningFocus />
           <p className="mt-5 mb-1 text-hightlight">
             <strong className="text-title">Beyond Code</strong>
           </p>
@@ -149,7 +115,7 @@ export default function AboutMe() {
             </span>
           </p>
         </div>
-      </p>
+      </div>
     </div>
   );
 }

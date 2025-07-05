@@ -54,12 +54,10 @@ function Skills() {
     "github",
   ];
   return (
-    <div id="skill" className="py-24">
+    <div id="skills" className="py-20">
       <div>
-        <div className="relative mb-10 mid-lg:mb-20">
-          <h1 className="heading">
-            Skill & Tools
-          </h1>
+        <div className="relative mb-10">
+          <h1 className="heading">Skill & Tools</h1>
           <p className="absolute top-11 text-sm text-secondary">
             What Tools and Things can I do!
           </p>
@@ -73,8 +71,12 @@ function Skills() {
               className="cursor-pointer transition transform duration-500 hover:scale-110 hover:rotate-12 hover:animate-pulse opacity-50 hover:opacity-100"
             >
               <div className="p-4 rounded-full flex flex-col text-center justify-center">
-                <Image className="w-24 flex items-center justify-center mx-auto" src={tool} alt={tool} />
-                <p className="uppercase mt-2 text-sm">{toolsName[index]}</p>
+                <Image
+                  className="w-24 flex items-center justify-center mx-auto"
+                  src={tool}
+                  alt={tool}
+                />
+                <p className="uppercase mt-2 text-sm font-Exo2">{toolsName[index]}</p>
               </div>
             </div>
           );
