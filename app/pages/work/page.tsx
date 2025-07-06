@@ -16,10 +16,10 @@ const container = {
   },
 };
 
-const fadeItem = {
-  hidden: { opacity: 0, y: 40 },
-  visible: { opacity: 1, y: 0 },
-};
+// const fadeItem = {
+//   hidden: { opacity: 0, y: 40 },
+//   visible: { opacity: 1, y: 0 },
+// };
 const title = "Some Things I've built";
 
 const Work = () => {
