@@ -13,7 +13,7 @@ body {
   --color-hover: #5eead4;
   --color-hightlight: #64ffda;
   --breakpoint-2xl: 1400px;
-  --font-Exo2: 'Exo 2', sans-serif;
+  --font-Exo2: var(--font-exo2);
 }
 
 @layer components {
@@ -35,7 +35,6 @@ body {
   .ContactPlaceHolder {
     @apply placeholder:opacity-50 border-b bg-transparent focus:outline-none py-1 placeholder:text-sm;
   }
- 
 }
 @layer base {
   a {

@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { Inter } from "next/font/google";
+import { Exo_2, Inter } from "next/font/google";
 import Introduction from "./components/introduction/page";
 import "./styles/global.css";
 
@@ -8,11 +8,12 @@ const inter = Inter({
   subsets: ["latin"],
   display: "swap",
 });
-// export const exo2 = Exo_2({
-//   variable: "--font-exo2",
-//   subsets: ["cyrillic-ext", "latin", "latin-ext"],
-//   display: "swap",
-// });
+
+const exo2 = Exo_2({
+  variable: "--font-exo2",
+  subsets: ["cyrillic-ext", "latin", "latin-ext"],
+  display: "swap",
+});
 
 export const metadata: Metadata = {
   title: "Tanjimul Sabbir | Personal Portfolio",
@@ -54,7 +55,7 @@ export default function RootLayout({
   return (
     <html lang="en" className="scroll-smooth">
       <body
-        className={`${inter.variable} antialiased mt-20 container max-w-screen-2xl mx-auto lg:flex px-4 md:px-5 lg:px-8 2xl:px-10 justify-between`}
+        className={`${inter.variable} ${exo2.variable} antialiased mt-20 container max-w-screen-2xl mx-auto lg:flex px-4 md:px-5 lg:px-8 2xl:px-10 justify-between`}
       >
         <div>
           <Introduction />

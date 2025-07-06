@@ -1,44 +1,16 @@
 "use client";
 
-import { motion, Variants, Transition } from "framer-motion";
 import BeyondCode from "./BeyondCode";
-import LearningFocus from "./LearningFocus";
 import CurrentWorking from "./CurrentWorking";
+import LearningFocus from "./LearningFocus";
 
-const containerVariants: Variants = {
-  hidden: { opacity: 0, y: 30 },
-  visible: {
-    opacity: 1,
-    y: 0,
-    transition: {
-      duration: 0.6,
-      // Use easing array or cast to any to avoid TS error
-      ease: [0.42, 0, 0.58, 1], // easeOut cubic-bezier
-      staggerChildren: 0.2,
-    } as Transition,
-  },
-};
-
-const childVariants: Variants = {
-  hidden: { opacity: 0, y: 20 },
-  visible: { opacity: 1, y: 0 },
-};
 
 export default function AboutMe() {
   return (
-    <motion.div
-      id="aboutme"
-      className="scroll-mt-20"
-      initial="hidden"
-      whileInView="visible"
-      viewport={{ once: true, amount: 0.3 }}
-      variants={containerVariants}
-    >
-      <motion.h1 variants={childVariants} className="mt-7 lg:mt-0 heading">
-        About
-      </motion.h1>
+    <div id="aboutme" className="scroll-mt-20">
+      <h1 className="mt-7 lg:mt-0 heading">About</h1>
 
-      <motion.div variants={childVariants} className="description">
+      <div className="description">
         Hi, I’m <span className="title">Tanjimul Islam Sabbir</span>, a
         dedicated <span className="title">Front-End Developer</span> who thrives
         on building intuitive, scalable, and performance-optimized web
@@ -87,7 +59,7 @@ export default function AboutMe() {
         <CurrentWorking />
         <br />
         <br />
-        <span className="title text-hightlight"> In my personal time,</span> I
+        <span className="title"> In my personal time,</span> I
         explore technical depths that make frontend powerful. I enjoy solving{" "}
         <span className="title">complex logic problems</span>, diving into{" "}
         <span className="title">JavaScript execution contexts</span>, and
@@ -119,11 +91,11 @@ export default function AboutMe() {
         learning without limits. Let’s build something meaningful together.
         <br />
         <br />
-        <motion.div variants={childVariants} className="text-secondary">
+        <div className="text-secondary">
           <LearningFocus />
           <BeyondCode />
-        </motion.div>
-      </motion.div>
-    </motion.div>
+        </div>
+      </div>
+    </div>
   );
 }

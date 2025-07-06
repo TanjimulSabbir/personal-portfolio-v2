@@ -12,7 +12,7 @@ export default function CurrentWorking() {
         with hands-on experience in:
       </p>
 
-      <ul className="space-y-5 pl-2 text-base">
+      <ul className="space-y-5">
         <li>
           🚀 <span className="title">Real-Time Platforms:</span> Built social media-like apps
           with video/audio calls, <code>Socket.io</code>-based chat, post
