@@ -171,7 +171,7 @@ const Contact = () => {
           </a>
           <a
             className="list-none"
-            href="https://discord.gg/bJmU6BtX"
+            href="https://discord.gg/XaZtnZVZ"
             target="_blank"
             rel="noreferrer"
           >

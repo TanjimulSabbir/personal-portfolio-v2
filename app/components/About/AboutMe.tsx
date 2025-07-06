@@ -3,6 +3,7 @@
 import { motion, Variants, Transition } from "framer-motion";
 import BeyondCode from "./BeyondCode";
 import LearningFocus from "./LearningFocus";
+import CurrentWorking from "./CurrentWorking";
 
 const containerVariants: Variants = {
   hidden: { opacity: 0, y: 30 },
@@ -43,26 +44,51 @@ export default function AboutMe() {
         on building intuitive, scalable, and performance-optimized web
         experiences.
         <br />
-        <br />I specialize in modern technologies like{" "}
-        <span className="title">ReactJS</span>,{" "}
-        <span className="title">TypeScript</span>,{" "}
-        <span className="title">Redux Toolkit</span>, and{" "}
-        <span className="title">Tailwind CSS</span>. My approach focuses on
-        clean architecture, responsive design, and seamless user interaction.
+        <br />
+        <p className="mb-6">
+          I’m a front-end-focused developer who enjoys building modern,
+          responsive web applications using technologies like{" "}
+          <span className="title">ReactJS</span>,{" "}
+          <span className="title">Next.js</span>,{" "}
+          <span className="title">TypeScript</span>,{" "}
+          <span className="title">Redux Toolkit</span>, and{" "}
+          <span className="title">Tailwind CSS</span>. I’ve contributed to
+          real-world projects across <span className="title">e-commerce</span>,{" "}
+          <span className="title">travel</span>,{" "}
+          <span className="title">social media</span>, and{" "}
+          <span className="title">dashboard platforms</span> — developing
+          features like real-time chat, video/audio calls, multi-language
+          support, payment integration, and complex UI systems. I’ve also worked
+          with <span className="title">React Native</span> and{" "}
+          <span className="title">Expo</span> for mobile apps, and have a solid
+          understanding of <span className="title">Node.js</span> for full-stack
+          collaboration when needed.
+        </p>
+        <p>
+          Lately, I’ve been deeply interested in{" "}
+          <span className="title">performance optimization</span> and{" "}
+          <span className="title">front-end architecture</span> — exploring
+          concepts like <span className="title">code splitting</span>,{" "}
+          <span className="title">lazy loading</span>, and building{" "}
+          <span className="title">
+            reusable, maintainable component systems
+          </span>
+          . I love turning designs into <span className="title">fast</span>,{" "}
+          <span className="title">interactive</span>, and{" "}
+          <span className="title">accessible user experiences</span>. For me,
+          front-end development is more than just writing code — it’s where{" "}
+          <span className="title">creativity</span>,{" "}
+          <span className="title">logic</span>, and{" "}
+          <span className="title">user empathy</span> come together, and it’s
+          the space where I feel most at home.
+        </p>
         <br />
         <br />
-        I’m currently working as a{" "}
-        <span className="title">
-          Junior Software Engineer at Utech Innovation
-        </span>
-        , where I help build real-time platforms with features like video/audio
-        calls, multilingual support, and WebSocket-based chat. I’ve contributed
-        to products like a Brazilian e-commerce site, a travel booking platform,
-        and an organic food delivery system.
+        <CurrentWorking />
         <br />
         <br />
-        In my personal time, I explore technical depths that make frontend
-        powerful. I enjoy solving{" "}
+        <span className="title text-hightlight"> In my personal time,</span> I
+        explore technical depths that make frontend powerful. I enjoy solving{" "}
         <span className="title">complex logic problems</span>, diving into{" "}
         <span className="title">JavaScript execution contexts</span>, and
         understanding how browser engines handle rendering and re-rendering in

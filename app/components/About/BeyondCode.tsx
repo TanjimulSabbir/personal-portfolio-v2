@@ -26,9 +26,8 @@ export default function BeyondCode() {
   return (
     <motion.section
       className="mt-10"
-      initial="hidden"
       whileInView="visible"
-      viewport={{ once: false, amount: 0.2 }}
+      viewport={{ once: false, amount: 0.1 }}
       variants={container}
     >
       <motion.h2

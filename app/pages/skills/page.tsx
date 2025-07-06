@@ -1,7 +1,6 @@
 "use client";
 
 import Image from "next/image";
-import { motion, Variants } from "framer-motion";
 
 import AntDesign from "../../../public/media/images/skills/ant.svg";
 import css3 from "../../../public/media/images/skills/css3.png";
@@ -19,25 +18,6 @@ import shadcn from "../../../public/media/images/skills/shadcn.png";
 import tailwind from "../../../public/media/images/skills/tailwind.png";
 import typescript from "../../../public/media/images/skills/Typescript.png";
 import zod from "../../../public/media/images/skills/zod.png";
-
-const containerVariants: Variants = {
-  hidden: {},
-  visible: {
-    transition: {
-      staggerChildren: 0.1,
-    },
-  },
-};
-
-const itemVariants: Variants = {
-  hidden: { opacity: 0, y: 20, scale: 0.8 },
-  visible: {
-    opacity: 1,
-    y: 0,
-    scale: 1,
-    transition: { duration: 0.4, ease: [0.42, 0, 0.58, 1] },
-  },
-};
 
 function Skills() {
   const Tools = [
@@ -87,18 +67,11 @@ function Skills() {
         </div>
       </div>
 
-      <motion.div
-        className="grid grid-cols-3 sm:grid-cols-4 gap-7"
-        variants={containerVariants}
-        initial="hidden"
-        whileInView="visible"
-        viewport={{ once: false, amount: 0.3 }}
-      >
+      <div className="grid grid-cols-3 sm:grid-cols-4 gap-7">
         {Tools.map((tool, index) => (
-          <motion.div
+          <div
             key={index}
             className="cursor-pointer transition transform duration-500 hover:scale-110 hover:rotate-12 hover:animate-pulse opacity-50 hover:opacity-100"
-            variants={itemVariants}
           >
             <div className="p-4 rounded-full flex flex-col text-center justify-center">
               <Image
@@ -110,9 +83,9 @@ function Skills() {
                 {toolsName[index]}
               </p>
             </div>
-          </motion.div>
+          </div>
         ))}
-      </motion.div>
+      </div>
     </div>
   );
 }

@@ -33,7 +33,7 @@ export default function Header() {
     });
 
     return () => observer.disconnect();
-  }, []);
+  }, [navItems]);
 
   return (
     <header className="hidden lg:block mt-10">
@@ -43,27 +43,29 @@ export default function Header() {
           const isActive = active === sectionId;
 
           return (
-            <li
-              key={item.name}
-              className="group flex items-center space-x-4 cursor-pointer font-Exo2"
-              onClick={() => setActive(sectionId)} // 🔥 Manually set active on click
-            >
-              <span
-                className={`h-[1px] transition-all duration-300 ${
-                  isActive
-                    ? "bg-white w-14"
-                    : "bg-gray-600 group-hover:bg-white w-6 group-hover:w-14"
-                }`}
-              ></span>
-              <Link
-                href={item.href}
-                className={`uppercase text-sm tracking-wide font-semibold transition-colors duration-300 ${
-                  isActive
-                    ? "text-white"
-                    : "text-gray-500 group-hover:text-white"
-                }`}
-              >
-                {item.name}
+            <li key={item.name}>
+              <Link href={item.href}>
+                <div
+                  className="group flex items-center space-x-4 cursor-pointer font-Exo2"
+                  onClick={() => setActive(sectionId)}
+                >
+                  <span
+                    className={`h-[1px] transition-all duration-300 ${
+                      isActive
+                        ? "bg-white w-14"
+                        : "bg-gray-600 group-hover:bg-white w-6 group-hover:w-14"
+                    }`}
+                  ></span>
+                  <span
+                    className={`uppercase text-sm tracking-wide font-semibold transition-colors duration-300 ${
+                      isActive
+                        ? "text-white"
+                        : "text-gray-500 group-hover:text-white"
+                    }`}
+                  >
+                    {item.name}
+                  </span>
+                </div>
               </Link>
             </li>
           );
