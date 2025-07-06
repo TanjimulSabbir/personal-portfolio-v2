@@ -1,10 +1,22 @@
 "use client";
+
 import { useState } from "react";
 import toast, { Toaster } from "react-hot-toast";
 import { BsDiscord } from "react-icons/bs";
 import { CiTwitter } from "react-icons/ci";
 import { FaMedium } from "react-icons/fa";
 import { FiFacebook, FiGithub, FiLinkedin } from "react-icons/fi";
+import { motion, cubicBezier } from "framer-motion";
+
+const fadeInUp = {
+  hidden: { opacity: 0, y: 20 },
+  visible: {
+    opacity: 1,
+    y: 0,
+    transition: { duration: 0.6, ease: cubicBezier(0.6, -0.05, 0.01, 0.99) },
+  },
+};
+
 const Contact = () => {
   const [message, setMessage] = useState({
     name: "",
@@ -15,17 +27,15 @@ const Contact = () => {
   const handleMessage = () => {
     if (message.name !== "") {
       const emailLink = document.createElement("a");
-      emailLink.href = `mailto:tanjimulsabbir.dev@gmail.com?subject=${message.subject}!&body=Hi, Tanjimul Sabbir,%0D%0A I'm ${message?.name}. ${message?.message}`;
-
-      emailLink.target = "_blank"; // Opens the email link in a new tab/window
-
-      // Append the link to the document body (you can hide it if needed)
+      emailLink.href = `mailto:tanjimulsabbir.dev@gmail.com?subject=${encodeURIComponent(
+        message.subject
+      )}!&body=${encodeURIComponent(
+        `Hi, Tanjimul Sabbir,\nI'm ${message.name}. ${message.message}`
+      )}`;
+      emailLink.target = "_blank";
       document.body.appendChild(emailLink);
-
-      // Programmatically trigger a click event
       emailLink.click();
       toast.dismiss("Please, send your message from email!");
-      // Remove the link from the document body (optional)
       document.body.removeChild(emailLink);
     } else {
       toast.error("No message found!");
@@ -33,8 +43,15 @@ const Contact = () => {
   };
 
   return (
-    <div id="contact" className="w-full mt-20 mb-10 mx-auto">
-      <div>
+    <motion.div
+      id="contact"
+      className="w-full mt-20 mb-10 mx-auto"
+      initial="hidden"
+      whileInView="visible"
+      viewport={{ once: false, amount: 0.1 }}
+      variants={fadeInUp}
+    >
+      <motion.div variants={fadeInUp}>
         <div className="mb-10 lg:text-center">
           <h1 className="heading font-bold text-[#ccd6f6] mb-5">
             Get In Touch
@@ -45,7 +62,7 @@ const Contact = () => {
             I’ll try my best to get back to you!
           </p>
         </div>
-        <div className="text-primary pt-10">
+        <motion.div className="text-primary pt-10" variants={fadeInUp}>
           <div className="sm:grid grid-cols-2 sm:space-x-14">
             <div className="mb-7 flex flex-col">
               <label htmlFor="fullName" className="text-xs">
@@ -92,7 +109,7 @@ const Contact = () => {
               className="ContactPlaceHolder border-custom-TextColor resize-none placeholder:rubik"
             ></textarea>
           </div>
-          <div data-aos="fade-down" data-aos-duration="700">
+          <div>
             <div className="mt-10">
               <button
                 onClick={handleMessage}
@@ -103,57 +120,68 @@ const Contact = () => {
               </button>
             </div>
           </div>
-        </div>
-      </div>
-      <div className="mt-20 rubik text-custom-TitleColor">
+        </motion.div>
+      </motion.div>
+
+      <motion.div
+        className="mt-20 rubik text-custom-TitleColor"
+        variants={fadeInUp}
+      >
         <h2>Feeling social? Find me on these online spaces too!</h2>
         <div className="flex items-center space-x-3 mt-3">
           <a
             className="list-none"
             href="https://github.com/TanjimulSabbir"
             target="_blank"
+            rel="noreferrer"
           >
-            <FiGithub />{" "}
+            <FiGithub />
           </a>
           <a
             className="list-none"
             href="https://www.linkedin.com/in/TanjimulSabbir"
             target="_blank"
+            rel="noreferrer"
           >
-            <FiLinkedin />{" "}
+            <FiLinkedin />
           </a>
           <a
             className="list-none"
             href="https://www.facebook.com/tanjimulsabbir.devel"
             target="_blank"
+            rel="noreferrer"
           >
-            <FiFacebook />{" "}
+            <FiFacebook />
           </a>
           <a
             className="list-none text-primary"
             href="https://medium.com/@TanjimulSabbir"
             target="_blank"
+            rel="noreferrer"
           >
-            <FaMedium />{" "}
+            <FaMedium />
           </a>
           <a
             className="list-none text-xl"
             href="https://twitter.com/@TanjimulSabbir"
             target="_blank"
+            rel="noreferrer"
           >
-            <CiTwitter />{" "}
+            <CiTwitter />
           </a>
           <a
             className="list-none"
             href="https://discord.gg/bJmU6BtX"
             target="_blank"
+            rel="noreferrer"
           >
-            <BsDiscord />{" "}
+            <BsDiscord />
           </a>
         </div>
-      </div>
+      </motion.div>
+
       <Toaster position="top-center" />
-    </div>
+    </motion.div>
   );
 };
 

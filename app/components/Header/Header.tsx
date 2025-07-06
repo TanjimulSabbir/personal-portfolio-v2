@@ -33,7 +33,7 @@ export default function Header() {
     });
 
     return () => observer.disconnect();
-  }, [navItems]);
+  }, []);
 
   return (
     <header className="hidden lg:block mt-10">
