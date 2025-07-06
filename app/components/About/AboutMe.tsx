@@ -8,7 +8,7 @@ import LearningFocus from "./LearningFocus";
 export default function AboutMe() {
   return (
     <div id="aboutme" className="scroll-mt-20">
-      <h1 className="mt-7 lg:mt-0 heading">About</h1>
+      <h1 className="mt-7 lg:-mt-2 heading">About</h1>
 
       <div className="description">
         Hi, I’m <span className="title">Tanjimul Islam Sabbir</span>, a
