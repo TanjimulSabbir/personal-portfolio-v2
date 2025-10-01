@@ -2,7 +2,7 @@ import Header from "@/app/components/Header/Header";
 
 export default function Introduction() {
   return (
-    <div className="p-4 lg:p-0 lg:fixed lg:w-[35%] xl:w-[30%] 2xl:w-[25%] ">
+    <div className="lg:p-0 lg:fixed lg:w-[35%] xl:w-[30%] 2xl:w-[25%] ">
       <div>
         <h1 className="text-3xl sm:text-5xl lg:text-[40px] xl:text-5xl font-extrabold">Tanjimul Sabbir</h1>
         <h3 className="text-base lg:text-xl mt-3">Front End Software Engineer</h3>
