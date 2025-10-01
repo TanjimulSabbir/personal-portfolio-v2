@@ -30,20 +30,20 @@ export const metadata: Metadata = {
     "React",
     "Node.js",
   ],
-  authors: [{ name: "Tanjimul Islam Sabbir", url: "https://your-website.com" }],
+  authors: [{ name: "Tanjimul Islam Sabbir", url: "https://tanjimulsabbir.vercel.app/" }],
   openGraph: {
     title: "Tanjimul Sabbir | Portfolio",
     description: "Showcasing projects and skills in web development.",
-    url: "https://your-website.com",
-    siteName: "Your Portfolio",
+    url: "https://tanjimulsabbir.vercel.app/",
+    siteName: "Tanjimul Islam Sabbir",
     locale: "en_US",
     type: "website",
   },
   twitter: {
     card: "summary_large_image",
-    title: "Your Name | Portfolio",
+    title: "Tanjimul Islam Sabbir | Portfolio",
     description: "Check out my web development projects and skills.",
-    creator: "@yourtwitterhandle",
+    creator: "@TanjimulSabbbir",
   },
 };
 
@@ -55,12 +55,14 @@ export default function RootLayout({
   return (
     <html lang="en" className="scroll-smooth">
       <body
-        className={`${inter.variable} ${exo2.variable} antialiased mt-20 container max-w-screen-2xl mx-auto lg:flex px-4 md:px-5 lg:px-8 2xl:px-10 justify-between`}
+        className={`${inter.variable} ${exo2.variable} w-full antialiased  mt-20 container max-w-screen-2xl mx-auto lg:flex px-5 md:px-5 lg:px-8 2xl:px-10 justify-between`}
       >
         <div>
           <Introduction />
         </div>
-        {children}
+      
+          {children}
+   
       </body>
     </html>
   );

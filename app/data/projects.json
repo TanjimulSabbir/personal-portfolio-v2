@@ -21,62 +21,43 @@
     },
     {
       "id": 2,
-      "projectName": "Paradise Palms",
-      "Description": "Paradise Palm Resort – the ultimate getaway for guests. Explore a range of services, thoughtfully categorized for user convenience. Every service features detailed information and an appealing offers page, ensuring seamless updates. Booking desired services is easy, with a personalized dashboard to keep users informed about upcoming reservations. User can elevate their experience, inspiring repeat bookings and a world of vibrant memories.",
-      "image": "https://i.ibb.co/fNYm3TB/paradise-palms.png",
+      "projectName": "Memoro (Personal Growth App)",
+      "Description": "Memoro is a comprehensive personal growth and management app that brings together note-taking, to-do lists, reminders, health tracking, and money management in a single platform. The app helps users organize tasks, track habits, monitor health, and manage finances in one unified, intuitive interface.",
+      "image": "https://i.ibb.co.com/F4rzrRtD/memoro.png",
+      "Technologies": [
+        "Javascript",
+        "TypeScript",
+        "NextJs",
+        "TailwindCSS",
+        "Shadcn UI",
+        "IndexedDB"
+      ],
+      "Links": {
+        "github": "https://github.com/TanjimulSabbir/Memoro",
+        "live": "http://localhost:5173/"
+      }
+    },
+    {
+      "id": 3,
+      "projectName": "Organic BD (E-Commerce Platform)",
+      "Description": "Developed and optimized a full-featured e-commerce platform focusing on product catalog, search, cart, and checkout workflows. Implemented robust form handling and validation using React Hook Form and Zod for accurate customer data entry, ensuring a smooth and secure shopping experience.",
+      "image": "https://i.ibb.co.com/Ngmz6cbC/organicbd.png",
       "Technologies": [
         "Reactjs",
         "Javascript",
+        "TypeScript",
         "TailwindCSS",
-        "Firebase",
-        "RestAPI",
+        "React Hook Form",
+        "Zod",
         "Nodejs",
         "Expressjs",
         "MongoDB"
       ],
       "Links": {
-        "github": "https://github.com/TanjimulSabbir/Paradise-Palms-Resort-Client-Site",
-        "live": "https://paradise-palms-tourist-h-c7621.web.app/"
-      }
-    },
-    {
-      "id": 3,
-      "projectName": "Nature World",
-      "Description": "Introducing Naute World—an e-commerce haven designed for plant lovers. The mission is to offer user-friendly access to premium plants and gardening supplies at budget-friendly rates. The website is powered by the MERN (MongoDB, Express, React, Node.js) stack, crafting a seamless and responsive journey for every user.This site will immerse users in a world of verdant beauty and horticultural treasures, tailored to satisfy the user's passion for all things botanical.",
-      "image": "https://i.ibb.co/7KWMh1H/Home-Nature-World.png",
-      "Technologies": [
-        "Javascript",
-        "Reactjs",
-        "CSS",
-        "Bootstrap",
-        "RestAPI",
-        "Nodejs",
-        "Expressjs",
-        "MongoDB",
-        "Firebase"
-      ],
-      "Links": {
-        "github": "https://github.com/TanjimulSabbir/Nature-World-Client-Site",
-        "live": "https://nature-world-2c964.web.app/"
-      }
-    },
-    {
-      "id": 4,
-      "projectName": "Glimpses",
-      "Description": "Glimpses is a simple and beautiful interface to capture peoples's thoughts and moments. Use glimpses as a personal journal to track user's daily activities, record travels, people can meet. I just design it by myself. I'm doing it just for grow up my designing skill. If possible later, I will make an app like glimpses daybook type app.",
-      "image": "https://i.ibb.co/pdwyKPx/glimpses-A-simple-and-minimal-journal-app-2.png",
-      "Technologies": [
-        "Javascript",
-        "Reactjs",
-        "CSS",
-        "TailwindCSS",
-        "React-Icons"
-      ],
-      "Links": {
-        "github": "https://github.com/TanjimulSabbir/glimpses---A-simple-and-minimal-journal-app",
-        "live": "https://glimpsesget.netlify.app/"
+        "github": "",
+        "live": "https://organicbd.net"
       },
-      "stack": "Front-end and Design"
+      "stack": "Full-stack / E-Commerce App"
     },
     {
       "id": 5,
