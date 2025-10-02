@@ -62,6 +62,9 @@ export const metadata: Metadata = {
     creator: "@TanjimulSabbbir",
     images: ["https://i.ibb.co.com/gbQXJ24T/Tanjimul-Sabbir.jpg"],
   },
+  verification: {
+    google: 'UKeit_BXTlI3YB22GxKHIaExEvcjq-GIQ2JCCEsUrek',
+  },
 };
 
 
