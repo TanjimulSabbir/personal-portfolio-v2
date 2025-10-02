@@ -155,7 +155,7 @@ const Contact = () => {
           </a>
           <a
             className="list-none text-primary"
-            href="https://medium.com/@TanjimulSabbir"
+            href="https://medium.com/@tanjimulsabbir.dev"
             target="_blank"
             rel="noreferrer"
           >
