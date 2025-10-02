@@ -16,36 +16,54 @@ const exo2 = Exo_2({
 });
 
 export const metadata: Metadata = {
-  title: "Tanjimul Sabbir | Personal Portfolio",
+  title: "Tanjimul Islam Sabbir | Front-End Software Developer Portfolio",
   description:
-    "Welcome to my personal website showcasing my projects and skills.",
+    "Portfolio of Tanjimul Islam Sabbir, a Front-End Software Developer skilled in React, Next.js, JavaScript, and modern web technologies. Explore projects, skills, and experience.",
   keywords: [
     "Tanjimul Islam Sabbir",
-    "portfolio",
-    "developer",
-    "web developer",
-    "Next.js",
-    "software engineer",
-    "JavaScript",
-    "React",
-    "Node.js",
+    "Tanjimul Sabbir portfolio",
+    "Front-End Developer",
+    "React developer",
+    "Next.js developer",
+    "JavaScript developer",
+    "Web developer Bangladesh",
+    "Software engineer",
+    "UI developer",
+    "personal portfolio",
   ],
-  authors: [{ name: "Tanjimul Islam Sabbir", url: "https://tanjimulsabbir.vercel.app/" }],
+  authors: [
+    {
+      name: "Tanjimul Islam Sabbir",
+      url: "https://tanjimulsabbir.vercel.app/",
+    },
+  ],
   openGraph: {
-    title: "Tanjimul Sabbir | Portfolio",
-    description: "Showcasing projects and skills in web development.",
+    title: "Tanjimul Islam Sabbir | Front-End Software Developer Portfolio",
+    description:
+      "Explore the portfolio of Tanjimul Sabbir — Front-End Software Developer specializing in React, Next.js, and modern web applications.",
     url: "https://tanjimulsabbir.vercel.app/",
-    siteName: "Tanjimul Islam Sabbir",
+    siteName: "Tanjimul Sabbir Portfolio",
     locale: "en_US",
     type: "website",
+    images: [
+      {
+        url: "https://i.ibb.co.com/gbQXJ24T/Tanjimul-Sabbir.jpg",
+        width: 1200,
+        height: 630,
+        alt: "Tanjimul Islam Sabbir - Front-End Software Developer",
+      },
+    ],
   },
   twitter: {
     card: "summary_large_image",
-    title: "Tanjimul Islam Sabbir | Portfolio",
-    description: "Check out my web development projects and skills.",
+    title: "Tanjimul Islam Sabbir | Front-End Developer Portfolio",
+    description:
+      "Check out projects and skills of Tanjimul Sabbir, a React & Next.js developer passionate about modern web applications.",
     creator: "@TanjimulSabbbir",
+    images: ["https://i.ibb.co.com/gbQXJ24T/Tanjimul-Sabbir.jpg"],
   },
 };
+
 
 export default function RootLayout({
   children,
