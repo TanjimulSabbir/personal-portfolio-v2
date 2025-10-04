@@ -76,7 +76,7 @@ export default function RootLayout({
   return (
     <html lang="en" className="scroll-smooth">
       <body
-        className={`${inter.variable} ${exo2.variable} w-full antialiased  mt-20 container max-w-screen-2xl mx-auto lg:flex px-5 md:px-5 lg:px-8 2xl:px-10 justify-between`}
+        className={`${inter.variable} ${exo2.variable} w-full antialiased  mt-20 container max-w-screen-2xl mx-auto lg:flex px-5 md:px-6 lg:px-8 2xl:px-10 justify-between`}
       >
         <div>
           <Introduction />
